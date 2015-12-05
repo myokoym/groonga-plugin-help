@@ -30,6 +30,13 @@ command_help(grn_ctx *ctx, int nargs, grn_obj **args, grn_user_data *user_data)
   return NULL;
 }
 
+static grn_obj *
+command_default_encoding(grn_ctx *ctx, int nargs, grn_obj **args, grn_user_data *user_data)
+{
+  grn_ctx_output_cstr(ctx, grn_encoding_to_string(grn_get_default_encoding()));
+  return NULL;
+}
+
 grn_rc
 GRN_PLUGIN_INIT(grn_ctx *ctx)
 {
@@ -42,6 +49,7 @@ GRN_PLUGIN_REGISTER(grn_ctx *ctx)
   grn_expr_var vars[0];
 
   grn_plugin_command_create(ctx, "help", -1, command_help, 0, vars);
+  grn_plugin_command_create(ctx, "default_encoding", -1, command_default_encoding, 0, vars);
 
   return ctx->rc;
 }
