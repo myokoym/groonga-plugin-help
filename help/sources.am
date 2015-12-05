@@ -1,0 +1,2 @@
+help_la_SOURCES =				\
+	help.c
