@@ -33,7 +33,7 @@ fi
 GROONGA_REQUIRED_VERSION=2.0.9
 PKG_CHECK_MODULES([GROONGA], [groonga >= ${GROONGA_REQUIRED_VERSION}])
 
-help_pluginsdir="\${GROONGA_PLUGINS_DIR}/help"
+help_pluginsdir="help"
 AC_SUBST(help_pluginsdir)
 
 AC_CONFIG_FILES([
