@@ -31,7 +31,7 @@ if test x"$NO_MAKE" != x"yes"; then
 fi
 
 if test -z "$GROONGA"; then
-    GROONGA="`make -s -C $top_dir echo-groonga`"
+    GROONGA="groonga"
 fi
 export GROONGA
 
