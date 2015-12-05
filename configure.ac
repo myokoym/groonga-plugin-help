@@ -45,7 +45,7 @@ AC_SUBST(GROONGA_PLUGINS_DIR)
 AC_SUBST(GROONGA)
 AC_SUBST(GROONGA_HTTPD)
 
-help_pluginsdir="help"
+help_pluginsdir="\${GROONGA_PLUGINS_DIR}/help"
 AC_SUBST(help_pluginsdir)
 
 AC_CONFIG_FILES([
