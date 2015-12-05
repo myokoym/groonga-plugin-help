@@ -1,5 +1,5 @@
 AC_PREREQ(2.59)
-AC_INIT([groonga-help], 0.0.1, [yokoyama@clear-code.com])
+AC_INIT([groonga-help], 0.0.2, [yokoyama@clear-code.com])
 
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_SRCDIR([help/help.c])
