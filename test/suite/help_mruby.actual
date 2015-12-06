@@ -1,0 +1,4 @@
+plugin_register help_mruby/help_mruby
+[[0,0.0,0.0],true]
+help_mruby
+[[0,0.0,0.0],"hi"]
